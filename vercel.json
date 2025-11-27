@@ -1,17 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/data/(.*)",
@@ -32,15 +19,11 @@
         {
           "key": "Content-Type",
           "value": "application/pdf"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment"
         }
       ]
     },
     {
-      "source": "/(.*\\.(js|css|json))",
+      "source": "/(.*\\.(js|css))",
       "headers": [
         {
           "key": "Cache-Control",
@@ -50,4 +33,3 @@
     }
   ]
 }
-
