@@ -210,14 +210,14 @@ import Layout from '../layouts/Layout.astro';
     const downloadBtn = document.getElementById("downloadPdf");
     if (downloadBtn) {
       downloadBtn.addEventListener("click", () => {
-        // Ruta al PDF
-        const pdfPath = "/HDVAFLC-ENG.pdf";
+        // Ruta al PDF - usar ruta relativa desde la raíz
+        const pdfPath = "./HDVAFLC-ENG.pdf";
 
         // Intentar descargar el PDF
         fetch(pdfPath)
           .then((response) => {
             if (!response.ok) {
-              throw new Error("PDF no encontrado");
+              throw new Error(`PDF no encontrado: ${response.status} ${response.statusText}`);
             }
             return response.blob();
           })
@@ -234,8 +234,9 @@ import Layout from '../layouts/Layout.astro';
           })
           .catch((error) => {
             console.error("Error al descargar el PDF:", error);
-            // Fallback: intentar abrir directamente
-            window.open(pdfPath, "_blank");
+            // Fallback: intentar con ruta absoluta
+            const absolutePath = window.location.origin + "/HDVAFLC-ENG.pdf";
+            window.open(absolutePath, "_blank");
           });
       });
     }

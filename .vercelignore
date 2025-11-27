@@ -8,6 +8,5 @@ astro.config.mjs
 package-lock.json
 .env
 .env.local
-HDVAFLC-ENG.pdf
 .astro
 dist
