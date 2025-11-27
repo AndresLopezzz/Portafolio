@@ -1,0 +1,88 @@
+{
+  "personalInfo": {
+    "name": "Andres Felipe Lopez Cabrera",
+    "location": "Barranquilla, COL",
+    "email": "aflopezc18@email.com",
+    "phone": "+57 3043574318"
+  },
+  "professionalProfile": "Junior full-stack developer focused on building scalable, user-centered web applications, data analysis, and technological education. I have a pedagogical background since high school and practical experience in UX/UI design, programming, and database management. I enjoy working in collaborative environments, sharing knowledge, and leading learning initiatives. I am motivated by continuous growth and by contributing to others' development, especially in academic or analytical settings where I can combine my technical, communicative, and leadership skills to deliver measurable results.",
+  "education": [
+    {
+      "degree": "Bachelor's Degree in Systems Engineering",
+      "institution": "Universidad de la Costa (CUC)",
+      "location": "Barranquilla, Col.",
+      "graduationDate": null
+    },
+    {
+      "degree": "High School Diploma with a focus on Pedagogy",
+      "institution": "Escuela Normal Superior La Hacienda",
+      "location": "Barranquilla, Col.",
+      "graduationDate": "December 2021"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Bilingual Virtual Customer Assistant",
+      "company": "CENTER SOURCE COLOMBIA SAS",
+      "startDate": "Feb 2025",
+      "endDate": "Apr 2025",
+      "responsibilities": [
+        "Provided bilingual support for English and Spanish-speaking clients.",
+        "Resolved customer inquiries efficiently, enhancing satisfaction and retention."
+      ]
+    },
+    {
+      "position": "FullStack Developer & UX/UI Designer",
+      "company": "FREELANCE DEVELOPER",
+      "startDate": "2024",
+      "endDate": "2025",
+      "responsibilities": [
+        "Designed and implemented responsive web and mobile interfaces for a university mobility app.",
+        "Developed and deployed user-facing pages that improved load speed by 25% and reduced bounce rate during usability testing.",
+        "Improved user experience through usability testing and visual design refinements.",
+        "Responsible for creating, managing, and maintaining web pages to ensure functionality and user accessibility."
+      ]
+    }
+  ],
+  "technicalSkills": {
+    "languages": ["HTML", "CSS", "JavaScript", "Python", "SQL"],
+    "frameworks": ["React", "Astro", "Angular"],
+    "tools": ["Git", "GitHub", "Figma"],
+    "other": ["UX/UI Design", "Data Analysis Fundamentals"]
+  },
+  "projects": [
+    {
+      "name": "ALLMA",
+      "description": "Modular inventory system with customizable templates, enabling SMEs to manage products using dynamic fields tailored to their needs.",
+      "technologies": ["Python", "Django", "TanStack", "Expo", "PostgreSQL"],
+      "link": "https://github.com/AndresLopezzz/AllMa"
+    },
+    {
+      "name": "LibIA",
+      "description": "Desktop software leveraging artificial intelligence to securely process and respond to user queries about sensitive, locally stored information.",
+      "technologies": ["Tauri", "TanStack", "Rust", "SQLITE", "local LLMs"],
+      "link": "https://github.com/AndresLopezzz/LibIA"
+    },
+    {
+      "name": "SAMSUNG ROCAHVAC ONLINE STORE",
+      "description": "Assisted in the setup, customization, and optimization of an e-commerce platform built with Tiendanube for a local Samsung products distributor. Supported layout adjustments, product management, and UX improvements to enhance customer navigation and online sales performance.",
+      "technologies": ["E-commerce", "TiendaNube", "JavaScript"]
+    }
+  ],
+  "programs": [
+    "Postman/Yaak",
+    "PowerBI",
+    "Adobe Suite"
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "English",
+      "level": "B2"
+    }
+  ]
+}
+

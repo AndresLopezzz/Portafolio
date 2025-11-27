@@ -1,0 +1,383 @@
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", "Calibri", "Helvetica", sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 8.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.name {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-size: 10pt;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-family: "Arial", "Calibri", "Helvetica", sans-serif;
+}
+
+.download-btn:hover {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.download-btn:active {
+  background-color: #000000;
+  transform: scale(0.98);
+}
+
+.download-icon {
+  font-size: 12pt;
+}
+
+.download-text {
+  white-space: nowrap;
+}
+
+.contact {
+  font-size: 10pt;
+  color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact span {
+  margin-right: 8px;
+}
+
+.contact span:not(:last-child)::after {
+  content: "·";
+  margin-left: 8px;
+  color: #666666;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+}
+
+.section-title {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 3px;
+}
+
+/* Perfil profesional */
+.profile-text {
+  font-size: 10.5pt;
+  text-align: justify;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 5px;
+}
+
+/* Educación */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education-item {
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  font-weight: bold;
+  font-size: 10.5pt;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.education-institution {
+  font-size: 10pt;
+  color: #333333;
+  font-style: italic;
+}
+
+.education-location {
+  font-size: 10pt;
+  color: #666666;
+}
+
+.education-date {
+  font-size: 10pt;
+  color: #666666;
+  margin-top: 2px;
+}
+
+/* Experiencia */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.experience-item {
+  margin-bottom: 12px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.experience-position {
+  font-weight: bold;
+  font-size: 10.5pt;
+  color: #000000;
+}
+
+.experience-company {
+  font-size: 10.5pt;
+  color: #333333;
+  font-weight: 600;
+}
+
+.experience-date {
+  font-size: 9.5pt;
+  color: #666666;
+  white-space: nowrap;
+}
+
+.experience-responsibilities {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.experience-responsibilities li {
+  font-size: 10pt;
+  color: #000000;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+/* Habilidades técnicas */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills-category {
+  margin-bottom: 8px;
+}
+
+.skills-category-title {
+  font-weight: bold;
+  font-size: 10pt;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 10pt;
+  color: #000000;
+}
+
+.skills-list span {
+  padding: 2px 6px;
+}
+
+.skills-list span:not(:last-child)::after {
+  content: "|";
+  margin-left: 8px;
+  color: #999999;
+}
+
+/* Proyectos */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-item {
+  margin-bottom: 10px;
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 10.5pt;
+  color: #000000;
+  margin-bottom: 3px;
+}
+
+.project-description {
+  font-size: 10pt;
+  color: #000000;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.project-technologies {
+  font-size: 9.5pt;
+  color: #666666;
+  font-style: italic;
+  margin-top: 3px;
+}
+
+.project-link {
+  font-size: 9.5pt;
+  color: #0066cc;
+  text-decoration: none;
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Programas */
+.programs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 10pt;
+  color: #000000;
+}
+
+.programs-list span:not(:last-child)::after {
+  content: "·";
+  margin-left: 8px;
+  color: #999999;
+}
+
+/* Idiomas */
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.language-item {
+  font-size: 10pt;
+  color: #000000;
+}
+
+.language-name {
+  font-weight: 600;
+}
+
+.language-level {
+  color: #666666;
+  margin-left: 5px;
+}
+
+/* Responsive para impresión */
+@media print {
+  body {
+    font-size: 10pt;
+  }
+
+  .container {
+    padding: 0.3in;
+  }
+
+  .download-btn {
+    display: none;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  .experience-item,
+  .project-item {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .download-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .contact span::after {
+    display: none;
+  }
+}

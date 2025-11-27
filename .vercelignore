@@ -1,0 +1,7 @@
+# Archivos que no se deben desplegar
+.git
+.gitignore
+README.md
+DEPLOY.md
+node_modules
+
