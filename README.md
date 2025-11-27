@@ -1,24 +1,43 @@
 # Portafolio Web Estático - Andres Felipe Lopez Cabrera
 
-Portafolio web estático generado desde un archivo JSON, con estilo profesional tipo ATS (Applicant Tracking System).
+Portafolio web estático generado desde un archivo JSON, con estilo profesional tipo ATS (Applicant Tracking System). Construido con Astro para un rendimiento óptimo.
 
 ## 📋 Características
 
-- ✅ **Fácil de modificar**: Todo el contenido se gestiona desde `data/resume.json`
+- ✅ **Fácil de modificar**: Todo el contenido se gestiona desde `public/data/resume.json`
 - ✅ **Estilo ATS profesional**: Diseño limpio y optimizado para sistemas de seguimiento de candidatos
 - ✅ **Responsive**: Se adapta a diferentes tamaños de pantalla
 - ✅ **Imprimible**: Optimizado para impresión
-- ✅ **Sin dependencias**: Solo HTML, CSS y JavaScript vanilla
+- ✅ **Construido con Astro**: Framework moderno para sitios estáticos
 - ✅ **Descarga de PDF**: Botón para descargar el CV en formato PDF
 
 ## 🚀 Uso Rápido
 
-1. Abre `index.html` en tu navegador
-2. El portafolio se cargará automáticamente desde `data/resume.json`
+### Desarrollo Local
+
+1. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+
+2. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+3. Abre tu navegador en `http://localhost:4321`
+
+### Build para Producción
+
+```bash
+npm run build
+```
+
+El sitio se generará en la carpeta `dist/`.
 
 ## 📝 Modificar el Contenido
 
-Para actualizar tu portafolio, simplemente edita el archivo `data/resume.json`. La estructura es:
+Para actualizar tu portafolio, simplemente edita el archivo `public/data/resume.json`. La estructura es:
 
 ```json
 {
@@ -75,20 +94,26 @@ Edita las secciones dentro de `technicalSkills`:
 
 ```
 .
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS (estilo ATS)
-├── script.js           # JavaScript para cargar JSON
-├── package.json        # Configuración del proyecto
-├── vercel.json         # Configuración de Vercel
-├── .vercelignore       # Archivos a ignorar en Vercel
-├── data/
-│   └── resume.json     # Datos del currículum (EDITAR AQUÍ)
-└── README.md           # Este archivo
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro    # Layout base
+│   ├── pages/
+│   │   └── index.astro     # Página principal
+│   └── styles/
+│       └── styles.css        # Estilos CSS (estilo ATS)
+├── public/
+│   ├── data/
+│   │   └── resume.json      # Datos del currículum (EDITAR AQUÍ)
+│   └── HDVAFLC-ENG.pdf      # PDF del CV
+├── package.json              # Configuración del proyecto
+├── astro.config.mjs         # Configuración de Astro
+├── vercel.json               # Configuración de Vercel
+└── README.md                 # Este archivo
 ```
 
 ## 🎨 Personalización del Estilo
 
-Si deseas modificar el estilo visual, edita `styles.css`. El diseño actual sigue las mejores prácticas ATS:
+Si deseas modificar el estilo visual, edita `src/styles/styles.css`. El diseño actual sigue las mejores prácticas ATS:
 
 - Fuentes sans-serif limpias (Arial, Calibri)
 - Colores neutros (negro, gris, blanco)
@@ -151,4 +176,16 @@ Este proyecto es de uso personal.
 ---
 
 **Nota**: Asegúrate de mantener el formato JSON válido al editar `resume.json`. Puedes usar un validador JSON online si tienes dudas.
+
+## 📦 Instalación de Dependencias
+
+Si clonas este repositorio, asegúrate de instalar las dependencias:
+
+```bash
+npm install
+```
+
+## 📄 Nota sobre el PDF
+
+Asegúrate de copiar el archivo `HDVAFLC-ENG.pdf` a la carpeta `public/` antes de hacer el build. El botón de descarga lo buscará allí.
 

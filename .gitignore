@@ -1,19 +1,24 @@
-# Archivos del sistema
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment variables
+.env
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# Editores
+# Editor
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
-
-# Logs
-*.log
-
-# Archivos temporales
-*.tmp
-*.temp
-

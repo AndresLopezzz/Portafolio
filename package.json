@@ -1,17 +1,25 @@
 {
   "name": "portfolio-web",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Portafolio web estático con estilo ATS",
   "scripts": {
-    "build": "echo 'No build step required for static site'"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
+  "dependencies": {
+    "astro": "5.16.1"
+  },
+  "description": "Portafolio web estático con estilo ATS",
   "keywords": [
     "portfolio",
     "resume",
     "cv",
-    "static"
+    "static",
+    "astro"
   ],
   "author": "Andres Felipe Lopez Cabrera",
   "license": "MIT"
 }
-

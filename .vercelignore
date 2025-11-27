@@ -2,6 +2,11 @@
 .git
 .gitignore
 README.md
-DEPLOY.md
+SETUP.md
 node_modules
-
+src
+astro.config.mjs
+package-lock.json
+.env
+.env.local
+HDVAFLC-ENG.pdf

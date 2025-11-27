@@ -1,0 +1,68 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Portfolio de Andres Felipe Lopez Cabrera - Full Stack Developer"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="decorative-elements">
+      <div class="decorative-shape shape-1"></div>
+      <div class="decorative-shape shape-2"></div>
+      <div class="decorative-shape shape-3"></div>
+    </div>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/styles.css";
+</style>
+
+<style>
+  .decorative-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .decorative-shape {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .decorative-shape {
+      display: none;
+    }
+  }
+
+  @media print {
+    .decorative-elements {
+      display: none;
+    }
+  }
+</style>
